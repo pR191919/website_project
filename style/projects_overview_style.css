@@ -1,0 +1,126 @@
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+#main_header {
+    font-size: 2em;
+    text-align: center;
+    background-color: blue;
+    background-image: linear-gradient(blue 0%, rgb(150, 232, 243) 80%);
+    padding: 20px 10px 20px 10px;
+    margin: 0;
+}
+
+
+nav {
+    position: sticky;
+    top: 0;
+}
+.nav-bar-container {
+    margin: 0;
+    padding: 0;
+    a {
+        text-decoration: none;
+    }
+    li {
+        list-style: none;
+    }
+    .nav-bar {
+        margin: 0;
+        padding: 0;
+        background-color: black;
+        border-radius: 6px;
+        display: flex;
+        justify-content: space-between;
+        align-items: left;
+    }
+    .nav-elem:last-child {
+        margin-left: auto;
+    }
+    .nav-elem {
+        padding: 14px 16px;
+        border: 1px solid rgb(2, 100, 2);
+        border-collapse: collapse;
+        border-radius: 6px;
+        position: relative;
+    }
+    .reg-link, .dropdown-link {
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+    }
+    li.active {
+        background-color: lightgreen;
+    }
+    a.active {
+        color: black;
+    }
+    .dropdown-content {
+        position: absolute;
+        display: none;
+        background-color: lightgray;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        border-radius: 6px;
+        margin: 15.5px 0 0 0;
+        padding: 0px;
+        min-width: 200px;
+        z-index: 1;
+        text-align: left;
+    }
+    .dropdown-content li {
+        margin: 0;
+        padding: 14px 16px;
+        border-collapse: collapse;
+    }
+    .dropdown-content a {
+        color: black;
+        text-align: left;
+        margin: 0;
+        padding: 0;
+    }
+    .nav-elem:hover {
+        background-color: lightgreen;
+    }
+    .nav-elem:hover .reg-link {
+        color: black;
+    }
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+    .dropdown-content li:hover {
+        background-color: gray;
+        border-radius: 6px;
+    }
+}
+
+#project_quick_select {
+    float: left;
+    width: fit-content;
+    max-width: 20%;
+    margin: 0px;
+    padding: 0px;
+
+    .project_quick_select {
+        background-color: rgb(231, 227, 227);
+        margin: 0px, 0px;
+        padding: 10px 20px;
+        border-radius: 6px;
+    }
+    a {
+        text-decoration: none;
+    }
+    li {
+        display: block;
+        padding: 5px;
+    }
+    li:hover {
+        background-color: lightgrey;
+        border-radius: 6px;
+    }
+}
+#project_list {
+    float: left;
+    width: auto;
+}
