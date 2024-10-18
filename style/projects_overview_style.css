@@ -6,13 +6,16 @@ body {
 
 #main_header {
     font-size: 2em;
+    font-family: "Audiowide", "Lucida Handwriting", "Brush Script M7", cursive;
     text-align: center;
     background-color: blue;
     background-image: linear-gradient(blue 0%, rgb(150, 232, 243) 80%);
     padding: 20px 10px 20px 10px;
     margin: 0;
 }
-
+.font-effect-fire {
+    color: red;
+}
 
 nav {
     position: sticky;
